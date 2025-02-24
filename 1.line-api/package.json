@@ -1,0 +1,24 @@
+{
+  "name": "ai-agent-service",
+  "version": "1.0.0",
+  "description": "AI Agent Service with LINE Bot and Firebase",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^9.5.3",
+    "axios": "^1.7.9",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.0.0",
+    "googleapis": "^144.0.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

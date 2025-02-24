@@ -1,0 +1,26 @@
+{
+    "name": "register-form",
+    "version": "1.0.0",
+    "description": "推し登録フォーム",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "ejs": "^3.1.9",
+      "express": "^4.18.2",
+      "googleapis": "^129.0.0",
+      "helmet": "^7.1.0",
+      "dotenv": "^16.4.4"
+    },
+    "devDependencies": {
+      "nodemon": "^3.0.2"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    },
+    "author": "",
+    "license": "ISC"
+  }

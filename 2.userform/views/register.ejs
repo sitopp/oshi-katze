@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ユーザー登録</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>ユーザー登録</h1>
+    <form method="POST" action="/register">
+        <div>
+            <label for="nickname">ニックネーム（30文字以内）:</label><br>
+            <input type="text" id="nickname" name="nickname" maxlength="30" required>
+        </div>
+        <div>
+            <label for="favorite_talent">好きなタレント:</label><br>
+            <select id="favorite_talent" name="favorite_talent" required>
+                <option value="">選択してください</option>
+                <% talents.forEach(function(talent) { %>
+                    <option value="<%= talent.talent_id %>"><%= talent.talent_id %>.<%= talent.name %></option>
+                    
+                <% }); %>
+            </select>
+        </div>
+        <input type="hidden" name="user_id" value="<%= typeof user_id !== 'undefined' ? user_id : '' %>">
+        <button type="submit">登録</button>
+    </form>
+</body>
+</html> 
